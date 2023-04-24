@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  type="text/css" href="style.dynamic.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet">
+
+    <title>DYNAMIC CO</title>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">DYNAMIC</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#equipamentos">Equipamentos</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#contato">Contate-nos</a></li>
+        </ul>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-text">
+            <h2>Uma revolução total para o seu treino. Para todos os tipos de atividades e atletas.</h2>
+            <p></p>
+
+            <a href="#" class="btn"><i class='bx bx-phone'></i>Explorar</a>
+        </div>
+
+        <div class="inicio-image">
+            <img src="https://www.leisureopportunities.co.uk/images/imagesX/HIGH342882_73202_103776.jpg">
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-image">
+            <img
+                src="https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/04/danielle-cerullo-CQfNt66ttZM-unsplash-1-810x540.jpg">
+        </div>
+
+        <div class="sobre-text">
+            <span>Sobre nós</span>
+            <h2>Na Dynamic, trabalhamos para fortalecer as pessoas para um melhor desempenho no esporte e na vida.</h2>
+            <p>Criada em 2023 por Luan Sol e Pablo Gomide, a Dynamic se transformou rapidamente em uma grande referência
+                em inovação e conceito de marcas do meio da musculação.
+
+                A força é física, mental e comunitária. Constrói corpos, aguça mentes e nutre o crescimento. Quando
+                ficamos mais fortes, nos tornamos indivíduos mais saudáveis
+                e felizes que juntos constroem um mundo mais forte.
+
+                Com equipamentos fabricados com precisão e tecnologia, trazemos a melhor experiência de musculação para
+                uma comunidade crescente de pessoas que acreditam que ser forte
+                é essencial para viver a vida ao máximo.
+                #bestrong
+            </p>
+        </div>
+    </section>
+
+    <section class="equipamentos" id="equipamentos">
+        <h2 class="equip-title"> Todos os produtos</h2>
+
+        <div class="equipamentos-box bd-grid">
+            <div class="equip_box">
+                <h3 class="equip_box">Halteres</h3>
+                <span class="equip_name">Produto perfeito para obtenção de uma melhor execução de movimento, assim a fim
+                    atender às preocupações do Atleta.</span>
+
+                <h3 class="equip_box">Barra W</h3>
+                <span class="equip_name">Perfeita para exercicios para focar em membros superiores e a pegada neutra
+                    ajuda na estabilidade.</span>
+
+                <h3 class="equip_box">Barra Olímpica</h3>
+                <span class="equip_name">Essa barra é projetada com para exercícios e campeonatos de levantamento de
+                    peso.</span>
+
+                <h3 class="equip_box">Racks</h3>
+                <span class="equip_name">Racks são usadas para uma grande variedade de exercícios tanto de superiores e
+                    inferiores.</span>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="novidades" id="novidades">
+        <div class="nov-image">
+            <img src="https://galeriemagazine.com/wp-content/uploads/2020/11/784-Hollis_2227Divisidero_43221-01-01.jpg">
+        </div>
+
+        <div class="nov-text">
+            <span>Novos Halteres EVO </span>
+            <p>Esta semana ocorreu o lançamento oficial dos novos e revolucionários halteres EVO. O equipamento
+                é um contribuinte significativo na criação de grandes impressões para as academias.</p>
+            <span>Eventos</span>
+            <p>Nós organizamos eventos exclusivos para nossos clientes em todo o país. Junte-se a nós em nossos eventos
+                para experimentar nossos equipamentos em primeira mão, aprender técnicas e dicas úteis e conhecer outros
+                entusiastas do fitness como você!
+                Fique atento à nossa página de eventos para saber mais sobre nossos próximos eventos.</p>
+            <span>Novidades da empresa</span>
+            <p>Nós temos crescido rapidamente como empresa e estamos sempre trabalhando para melhorar nossos serviços e
+                atender às necessidades de nossos clientes. Recentemente, expandimos nossa equipe de suporte técnico e
+                estamos oferecendo serviços de manutenção e reparo em todas as regiões do país.
+                Confira nossa página de serviços para saber mais sobre nossos novos recursos.</p>
+        </div>
+
+    </section>
+    <br><br><br>
+    <section>
+    <h2>Entre em contato conosco</h2>
+    <p>email de contato: pablogomidebs@gmail.com</p>
+    <p>telefone de contato (21) 967199357</p>
+    <a href="https://www.instagram.com/luansol4/">Nos ache no instagam</a>
+    <br>
+    <form id="formulario">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required><br>
+
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="telefone">Telefone:</label>
+		<input type="text" id="telefone" name="telefone" required><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+    <div id="mensagem"></div>
+    <script>
+        const formulario = document.querySelector('#formulario');
+		const mensagem = document.querySelector('#mensagem');
+
+		formulario.addEventListener('submit', function(e) {
+			e.preventDefault(); // Previne o envio do formulário
+
+			// Captura os valores do formulário
+			const nome = document.querySelector('#nome').value;
+			const email = document.querySelector('#email').value;
+			const telefone = document.querySelector('#telefone').value;
+
+			// Exibe a mensagem de confirmação
+			mensagem.innerHTML = `O formulário foi enviado com sucesso! <br> Nome: ${nome} <br> E-mail: ${email} <br> Telefone: ${telefone}`;
+			mensagem.style.backgroundColor = '#d4edda'; // Define a cor de fundo da mensagem
+			mensagem.style.color = '#155724'; // Define a cor do texto da mensagem
+			mensagem.style.padding = '10px'; // Define o preenchimento interno da mensagem
+			mensagem.style.marginTop = '10px'; // Define a margem superior da mensagem
+
+			// Limpa os campos do formulário
+			document.querySelector('#nome').value = '';
+			document.querySelector('#email').value = '';
+			document.querySelector('#telefone').value = '';
+		});
+    </script>
+</section>
+
+</body>
+
+</html>

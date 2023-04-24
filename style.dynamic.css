@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #001d3d;
+    --span-color: #ffc300;
+    --bg-color: #f9f9ff;
+    --text-color: #003566;
+    --header-color: #e5e5e5;
+    --big-font: 3.6rem;
+    --h2-font: 2.26rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 20px 320px;
+    background: var(--header-color);
+    box-shadow: rgba(33, 35, 38,0.1) 0px 10px 10px -10px;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: color .4s;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 75px 16.7%;
+}
+.inicio{
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    align-items: center;
+}
+.inicio-image{
+    width: 50%;
+    float: left;
+   
+    
+}
+.inicio-text h2{
+    font-size: var(--big-font);
+    color: var(--span-color);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.inicio-text p{
+    max-width: 100%;
+    width: 430px;
+    font-size: var(--p-font);
+    color: #717173;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+.btn i{
+    margin-right: 10px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background: var(--span-color);
+    transition: .4s;
+    box-shadow: 0 5px 15px 2px rgb(63 44 44 / 18%);
+}
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 80px;
+    align-items: center;
+    padding-top: 100px;
+}
+.sobre-image img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+}
+.sobre-text span{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.sobre-text h2{
+    font-size: var(--h2-font);
+    color: var(--span-color);
+    margin-bottom: 15px;
+}
+.sobre-text p{
+    color: #717173;
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.port-text{
+    text-align: center;
+}
+.port-text span{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.equip-text h2{
+    font-size: var(--h2-font);
+}
+.portfolio{
+    padding-top:  100px;
+}
+ .equipamentos-box{
+    row-gap: 2rem;
+ }
+ .equip-sub{
+    color: var(--main-color);
+    margin-bottom: var(--mb-3);
+ }
+ .equip_name{
+    display: inline-block;
+    font-size: var(--p-font);
+    margin-right: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    padding: .25rem .5rem;
+    background-color: var(--bg-color);
+    border-radius: .25rem;
+ }
+ .algo{
+    padding: 60px 45px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0,0.4) 0px 3px 5px;
+ }
+.algo i{
+    font-size: 48px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.algo h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.algo p{
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
+.novidades{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 80px;
+    align-items: center;
+    padding-top: 100px;
+}
+.nov-image{
+    max-width: 100%;
+    width: 400px;
+    height: min-content;
+    border-radius: 20px;
+}
+.nov-text span{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    text-align: left;
+}
+.nov-text p{
+    color: #717173;
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+}
